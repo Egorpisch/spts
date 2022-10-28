@@ -1,0 +1,409 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("SPTS: Origin", "RJTheme6")
+
+local Tab = Window:NewTab("Auto")
+
+local Section = Tab:NewSection("Auto Hit")
+
+Section:NewToggle("Auto Hit", "Знаешь кто ещё делает удары? Гитлер!", function(state)
+    if state then
+        hit = 1
+        while wait() do
+            if hit == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_FS_Request",
+                [2] = 1
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        hit = 0
+    end
+end)
+
+Section:NewToggle("Auto Hit Stone", "Знаешь кто ещё делает удары на камне? Гитлер!", function(state)
+    if state then
+        hits = 1
+        while wait() do
+            if hits == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_FS_Request",
+                [2] = 2
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        hits = 0
+    end
+end)
+
+Section:NewToggle("Auto Hit Crystall", "Знаешь кто ещё делает удары на кристалле? Гитлер!", function(state)
+    if state then
+        hits = 1
+        while wait() do
+            if hits == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_FS_Request",
+                [2] = 3
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        hits = 0
+    end
+end)
+
+local Section = Tab:NewSection("Auto Body")
+
+Section:NewToggle("Auto Body", "Знаешь кто ещё тренит тело? Гитлер!", function(state)
+    if state then
+        body = 1
+        while wait() do
+            if body == 1 then
+                local args = {
+                [1] = {
+                [1] = "+BT1"
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        body = 0
+    end
+end)
+
+local Section = Tab:NewSection("Auto Psychic")
+
+Section:NewToggle("Auto Psychic", "Знаешь кто ещё тренит разум? Гитлер!", function(state)
+    if state then
+        psychic = 1
+        while wait() do
+            if psychic == 1 then
+                local args = {
+                [1] = {
+                [1] = "+PP1"
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        psychic = 0
+    end
+end)
+
+Section:NewToggle("Auto Psychic (Fly)", "Знаешь кто ещё тренит разум? Гитлер!", function(state)
+    if state then
+        psychicf = 1
+        while wait() do
+            if psychicf == 1 then
+                local args = {
+                [1] = {
+                [1] = "+PP2"
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        psychicf = 0
+    end
+end)
+
+Section:NewToggle("Auto Psychic (Fly)", "Знаешь кто ещё тренит разум? Гитлер!", function(state)
+    if state then
+        psychicf = 1
+        while wait() do
+            if psychicf == 1 then
+                local args = {
+                [1] = {
+                [1] = "+PP2"
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        psychicf = 0
+    end
+end)
+
+local Section = Tab:NewSection("Auto Movement")
+
+Section:NewToggle("Auto Movement", "Знаешь кто ещё бежит? Гитлер!", function(state)
+    if state then
+        movement = 1
+        while wait() do
+            if movement == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_MS_Request",
+                [2] = 1
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        movement = 0
+    end
+end)
+
+Section:NewToggle("Auto Movement Tier 1", "Знаешь кто ещё бежит? Гитлер!", function(state)
+    if state then
+        movement1 = 1
+        while wait() do
+            if movement1 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_MS_Request",
+                [2] = 2
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        movement1 = 0
+    end
+end)
+
+Section:NewToggle("Auto Movement Tier 2", "Знаешь кто ещё бежит? Гитлер!", function(state)
+    if state then
+        movement2 = 1
+        while wait() do
+            if movement2 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_MS_Request",
+                [2] = 3
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        movement2 = 0
+    end
+end)
+
+Section:NewToggle("Auto Movement Tier 3", "Знаешь кто ещё бежит? Гитлер!", function(state)
+    if state then
+        movement3 = 1
+        while wait() do
+            if movement3 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_MS_Request",
+                [2] = 4
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        movement3 = 0
+    end
+end)
+
+Section:NewToggle("Auto Movement Tier 4", "Знаешь кто ещё бежит? Гитлер!", function(state)
+    if state then
+        movement5 = 1
+        while wait() do
+            if movement5 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_MS_Request",
+                [2] = 4
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        movement5 = 0
+    end
+end)
+
+Section:NewToggle("Auto Movement Tier 5", "Знаешь кто ещё бежит? Гитлер!", function(state)
+    if state then
+        movement6 = 1
+        while wait() do
+            if movement6 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_MS_Request",
+                [2] = 5
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        movement6 = 0
+    end
+end)
+
+local Section = Tab:NewSection("Auto Jump")
+
+Section:NewToggle("Auto Jump", "Знаешь кто ещё прыгает? Гитлер!", function(state)
+    if state then
+        jump = 1
+        while wait() do
+            if jump == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_JF_Request",
+                [2] = 1
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        jump = 0
+    end
+end)
+
+Section:NewToggle("Auto Jump Tier 1", "Знаешь кто ещё прыгает? Гитлер!", function(state)
+    if state then
+        jump1 = 1
+        while wait() do
+            if jump1 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_JF_Request",
+                [2] = 2
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        jump1 = 0
+    end
+end)
+
+Section:NewToggle("Auto Jump Tier 2", "Знаешь кто ещё прыгает? Гитлер!", function(state)
+    if state then
+        jump2 = 1
+        while wait() do
+            if jump2 == 1 then
+                local args = {
+                [1] = {
+                [1] = "Add_JF_Request",
+                [2] = 3
+                }
+                }
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+            end
+        end
+    else
+        jump2 = 0
+    end
+end)
+
+local Tab = Window:NewTab("For Weight")
+
+local Section = Tab:NewSection("Speed and Jump")
+
+Section:NewSlider("Скорость", "Знаешь кто ещё быстро бежит? Гитлер!", 5000, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("Прыжок", "Знаешь кто ещё высоко прыгает? Гитлер!", 500, 0, function(s) -- 500 (Макс. значение) | 0 (Мин. значение)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+local Tab = Window:NewTab("Teleports")
+
+local Section = Tab:NewSection("Fist Strength")
+
+Section:NewButton("Камень", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].FistStrength.TrainingRock.CFrame
+end)
+
+Section:NewButton("Кристалл", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].FistStrength.TrainingCrystal.Part.CFrame
+end)
+
+Section:NewButton("Голубая сфера (1B+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].FistStrength["TrainingArea_4"].CFrame
+end)
+
+Section:NewButton("Зелёная сфера (100B+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].FistStrength["TrainingArea_5"].CFrame
+end)
+
+Section:NewButton("Лава сфера (10T+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].FistStrength["TrainingArea_6"].CFrame
+end)
+
+local Section = Tab:NewSection("Body Toughness")
+
+Section:NewButton("Холодная ванна (100+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].BodyToughness.ColdBath.Water.CFrame
+end)
+
+Section:NewButton("Огненная ванна (10К+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].BodyToughness.FireBath.FirePart.CFrame
+end)
+
+Section:NewButton("Ледяная ванна (100К+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].BodyToughness.IceBath.IcePart.CFrame
+end)
+
+Section:NewButton("Торнадо (1M+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].BodyToughness.TornadoTouchPart.CFrame
+end)
+
+Section:NewButton("Вулкан (10M+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].BodyToughness.Volcano.LavaFloor.CFrame
+end)
+
+Section:NewButton("Зелёный огонь (1B+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Decorations"].BodyToughness.GreenFireBBEffectPart.CFrame
+end)
+
+Section:NewButton("Зелёные химикаты (100B+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].BodyToughness.AcidPart.CFrame
+end)
+
+Section:NewButton("Лава (10T+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].BodyToughness.LavaPart2.CFrame
+end)
+
+local Section = Tab:NewSection("Psychic Power")
+
+Section:NewButton("Деревце (1M+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].PsychicPower.PPTrainingPart1.CFrame
+end)
+
+Section:NewButton("Просвящённое деревце (1B+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].PsychicPower.PPTrainingPart2.CFrame
+end)
+
+Section:NewButton("Мостик (1T+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].PsychicPower.PPTrainingPart3.CFrame
+end)
+
+Section:NewButton("Водопад (1Qa+)", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map["Training_Collisions"].PsychicPower["TrainingArea_6"].CFrame
+end)
+
+local Section = Tab:NewSection("Quest NPC")
+
+Section:NewButton("Sathopian", "...", function()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.QuestNPC.Sathopian.HumanoidRootPart.CFrame
+end)
